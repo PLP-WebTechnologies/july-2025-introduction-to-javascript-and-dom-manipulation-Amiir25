@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Mastery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript Fundamentals Mastery</h1>
+            <p class="subtitle">Explore essential JavaScript concepts including variables, conditionals, functions, loops, and DOM manipulation through interactive examples.</p>
+        </header>
+        
+        <div class="card-container">
+            <!-- JavaScript Basics -->
+            <div class="card">
+                <h3>JavaScript Basics</h3>
+                <div class="card-content">
+                    <div class="input-group">
+                        <label for="userAge">Enter your age:</label>
+                        <input type="number" id="userAge" placeholder="Enter your age">
+                    </div>
+                    <button onclick="checkAge()">Check Eligibility</button>
+                    <div class="result" id="ageResult"></div>
+                    
+                    <div class="input-group" style="margin-top: 20px;">
+                        <label for="numberInput">Enter a number:</label>
+                        <input type="number" id="numberInput" placeholder="Enter a number">
+                    </div>
+                    <button onclick="checkNumber()">Check Number Type</button>
+                    <div class="result" id="numberResult"></div>
+                </div>
+            </div>
+            
+            <!-- JavaScript Functions -->
+            <div class="card">
+                <h3>JavaScript Functions</h3>
+                <div class="card-content">
+                    <div class="input-group">
+                        <label for="rectangleLength">Rectangle Length:</label>
+                        <input type="number" id="rectangleLength" placeholder="Enter length">
+                    </div>
+                    <div class="input-group">
+                        <label for="rectangleWidth">Rectangle Width:</label>
+                        <input type="number" id="rectangleWidth" placeholder="Enter width">
+                    </div>
+                    <button onclick="calculateArea()">Calculate Area</button>
+                    <div class="result" id="areaResult"></div>
+                    
+                    <div class="input-group" style="margin-top: 20px;">
+                        <label for="celciusTemp">Temperature in Celsius:</label>
+                        <input type="number" id="celciusTemp" placeholder="Enter temperature">
+                    </div>
+                    <button onclick="convertTemperature()">Convert to Fahrenheit</button>
+                    <div class="result" id="tempResult"></div>
+                </div>
+            </div>
+            
+            <!-- JavaScript Loops -->
+            <div class="card">
+                <h3>JavaScript Loops</h3>
+                <div class="card-content">
+                    <div class="input-group">
+                        <label for="loopNumber">Enter a number (1-10):</label>
+                        <input type="number" id="loopNumber" min="1" max="10" placeholder="Enter a number">
+                    </div>
+                    <button onclick="runLoops()">Run Loops</button>
+                    <div class="result">
+                        <p>Multiplication Table (For Loop):</p>
+                        <div class="loop-output" id="forLoopOutput"></div>
+                    </div>
+                    
+                    <div class="result" style="margin-top: 15px;">
+                        <p>Countdown (While Loop):</p>
+                        <div class="loop-output" id="whileLoopOutput"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- DOM Manipulation -->
+            <div class="card">
+                <h3>DOM Manipulation</h3>
+                <div class="card-content">
+                    <button onclick="changeText()">Change Text Below</button>
+                    <div class="dom-element" id="textElement">This text will change when you click the button.</div>
+                    
+                    <button onclick="changeColor()">Change Box Color</button>
+                    <div class="color-box" id="colorBox"></div>
+                    
+                    <div class="input-group">
+                        <label for="newItem">Add to List:</label>
+                        <input type="text" id="newItem" placeholder="Enter item">
+                    </div>
+                    <button onclick="addToList()">Add Item</button>
+                    <div class="result">
+                        <p>Dynamic List:</p>
+                        <ul id="itemList"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>JavaScript Fundamentals Mastery Assignment &copy; PLP 2025</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
