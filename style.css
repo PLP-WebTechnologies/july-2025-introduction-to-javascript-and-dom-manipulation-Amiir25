@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1a2a6c;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
+}
+
+.card-content {
+    min-height: 200px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #1a2a6c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #2a3a9c;
+}
+
+.result {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    min-height: 50px;
+}
+
+.highlight {
+    color: #b21f1f;
+    font-weight: 600;
+}
+
+.loop-output {
+    max-height: 150px;
+    overflow-y: auto;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-family: monospace;
+}
+
+.dom-element {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    transition: all 0.3s;
+}
+
+.color-box {
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    margin: 10px 0;
+    background: #6c757d;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
